@@ -1,4 +1,4 @@
-\documentclass{book}
+\documentclass{report}
 
 \begin{document}
 \title{Gear Prototype 1}
@@ -10,8 +10,24 @@
 
 \chapter{Playing the Game}
 \section{Checks}
-Each player has a single suit from a standard deck of playing cards which they shuffle and place face down within easy reach. When a player attempts to do something that the
-GM deems has a chance of failure, they must make a check by drawing a card from their pile. The card they draw determines whether they succeed or fail, based on the difficulty
-level the GM assigns to the action.
+Each player has a single suit from a standard deck of playing cards which they shuffle and place face down within easy
+reach. When a player attempts to do something that the GM deems has a chance of failure, they must make a check by drawing
+a card from their pile and place it face up in a private discard pile next to their deck. The card they draw determines
+whether they succeed or fail, based on the difficulty level the GM assigns to the action. There are five possible
+difficulty levels that can be assigned:
+\begin{itemize}
+  \item Impossible: no card is drawn and the check automatically fails
+  \item Difficult: succeed if a king, queen or jack is drawn, fail otherwise
+  \item Medium: succeed if an eight or higher is drawn, fail otherwise
+  \item Easy: fail if a one, two or three is drawn, succeed otherwise
+  \item Trivial: no card is drawm and the check automatically succeeds
+\end{itemize}
+% Do we want Impossible and Trivial, and if so do we want them to have a critical chance?
+
+If an ace is drawn, rather than immediately determining success or failure, all thirteen cards are reshuffled and placed
+face down and a new card is drawn. This card then indicates sucess or failure based on the difficulty category, but the
+sucess or failure is considered critical, that is more significant than it would normally be. If the new card is an ace,
+immediately draw a third card, indicating supercritical success or failure, before shuffling the cards again. It is up to
+the GM to decide exactly what critical or supercritical success or failure means for a particular action.
 \section{Challenges}
 \end{document}
